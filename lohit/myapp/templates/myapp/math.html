@@ -1,0 +1,19 @@
+<htlm>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <h1 align="center">Calculate Churn Rate</h1>
+        <h3 align="center">Lohitashwa(26015531)</h3>
+        <form method="post">
+            {% csrf_token %}
+            <label>InitCust:</label>
+            <input type="text" name="InitCust" value="{{v}}"><br><br>
+            <label>CustLost:</label>
+            <input type="text" name="CustLost" value="{{s}}"><br><br>
+            <input type="submit" value="Calculate"><br><br>
+            <label>CustRate:</label>
+            <input type="text" value="{{ChurnRate}}">
+        </form>
+    </body>
+</htlm>
